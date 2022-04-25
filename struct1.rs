@@ -1,4 +1,4 @@
-use std::fmt;  // Import format
+use std::fmt; // Import format
 
 #[derive(Debug)]
 struct MinMax(i64, i64);
@@ -6,7 +6,7 @@ struct MinMax(i64, i64);
 // Implement 'Display' for 'MinMax'
 impl  fmt::Display for MinMax {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-       write!(f, "({}, {})", self.0, self.1) 
+        write!(f, "({}, {})", self.0, self.1)
     }
 }
 
@@ -22,7 +22,8 @@ impl  fmt::Display for Point2D {
    } 
 }
 
-fn main( ) {
+
+fn main() {
     let minmax = MinMax(0, 10);
 
     println!("Compare structures:");
@@ -32,7 +33,11 @@ fn main( ) {
     let big_range = MinMax(-500, 500);
     let small_range = MinMax(-5, 5);
 
-    println!("The big range is {big} and small range is {small}", small = small_range, big = big_range);
+    println!(
+        "The big range is {big} and small range is {small}",
+        small = small_range,
+        big = big_range
+    );
 
     let point = Point2D { x: 3.3, y: 7.2 };
     println!("Compare points");
