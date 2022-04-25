@@ -1,6 +1,6 @@
 // Hello world
 
-fn main(){
+fn main() {
     println!("Hello world!!");
     println!("I am a rustacean");
 }
